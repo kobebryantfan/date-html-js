@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{font: 1em Arial; background-color: rgba(255, 218, 185, 0.815); text-align: center;}
+h1{font: 1.5em Arial;}
+p{font: 1.5em Verdana;}
+.botaoSubmit{ font: 1em Arial;}
+
+article#box
+{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    margin: auto;
+    padding: 10px 10px;
+    box-shadow: 3px 5px 4px black;
+    border-radius: 10px 30px;
+}
+
+article#marca{text-align: end;opacity: 8%;}
+
