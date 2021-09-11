@@ -4,33 +4,33 @@ function botaoSubmit()
     let data = new Date();
     const meses = 
     {
-        0: 'Janeiro',
-        1: 'Fevereiro',
-        2: 'Março',
-        3: 'Abril',
-        4: 'Maio',
-        5: 'Junho',
-        6: 'Julho',
-        7: 'Agosto',
-        8: 'Setembro',
-        9: 'Outubro',
-        10: 'Novembro',
-        11: 'Dezembro',
+        0: 'January',
+        1: 'Februay',
+        2: 'March',
+        3: 'April',
+        4: 'May',
+        5: 'June',
+        6: 'July',
+        7: 'August',
+        8: 'September',
+        9: 'October',
+        10: 'November',
+        11: 'December',
    };
-   const dias = ['Seg.','Ter.','Qua.','Qui.', 'Sex.','Sáb.','Dom.'];
-   const dia = data.getDate();
+   const dias = ['Mon.','Tues.','Wed.','Thurs.', 'Fri.','Sat.','Sun.'];
+   const dia = data.getDay();
    const mes = data.getMonth();
    const timeString = data.toLocaleTimeString();
    const dateString = data.toLocaleDateString();
    const nomeMes = meses[mes];
    const nomeDia = dias[dia];
 
-   const mensagem = "A data de agora é "+dateString+"."+
-    "<br>Nos encontramos no mês de "+nomeMes+", e hoje é "+ nomeDia
+   const mensagem = "The date right now is "+dateString+"."+
+    "<br>The actual month is "+nomeMes+", and today is "+ nomeDia
     +"<br>";
 
-    document.body.innerHTML = "<br><br><br><h1 style='background-color: snow; width: 600px;margin: auto;padding: 20px 10px;box-shadow: 3px 5px 4px black;border-radius: 10px 30px;'>"+mensagem+"<br>Verificado às "+timeString + "</h1>"+
-   "<br><button class='botaoVoltar' type='button' onclick='botaoVoltar()'>Voltar.</button>";
+    document.body.innerHTML = "<br><br><br><h1 style='background-color: snow; width: 600px;margin: auto;padding: 20px 10px;box-shadow: 3px 5px 4px black;border-radius: 10px 30px;'>"+mensagem+"<br>Verified at "+timeString + "</h1>"+
+   "<br><button class='botaoVoltar' type='button' onclick='botaoVoltar()'>Return.</button>";
 };
 
 function botaoVoltar()
